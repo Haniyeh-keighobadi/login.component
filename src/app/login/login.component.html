@@ -1,0 +1,63 @@
+
+<div mat-dialog-content>
+  
+  <mat-form-field appearance="fill">
+    <div class="container1" >
+        <div class="close"  (click)="closeup()">&times;</div>
+        <div class="avatar"></div>
+        <form action="">
+            <div class="labels">
+        <label for="">Name:</label>
+        <br>
+        <label for="">Family:</label>
+        <br>
+        <label for="">Gender:</label>  
+        <br>
+        <label for="">Email:</label>
+        <br>
+        <label for="">Password:</label>
+        </div>
+        <div class="inputs">
+            <input type="text" name="FirstName" [(ngModel)]="FirstName">
+            <br>
+            <input type="text" name="LastName" [(ngModel)]="LastName">
+            <br>
+            <select name="Gender" id="" [(ngModel)]="Gender">
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+            <br> 
+            <input type="email" name="Email" [(ngModel)]="Email">
+            <br>
+            <input type="password" name="Password" [(ngModel)]="Password" required>
+        </div>
+    
+        <br><br>
+        <div class="section2">
+        <label for="" >Birthday:</label>
+        <input type="date" value="2023-09-03" name="Birthday" id="date" [(ngModel)]="Birthday">
+        <br><br>
+        <label for="">State:</label>
+        <select name="city1" class="select-city"  (selectionChange)="change($event)">
+           
+            <option value="" *ngFor="let state of dataSourceSelect" [value]="state.value">{{state.value}}</option>
+        </select>
+        
+        <label for="" class="lblcity">City:</label>
+        <select name="city2" disabled class="select-city"  (selectionChange)="change($event)">
+            <option value=""*ngFor="let state of dataSource" [value]="state.value">{{state.value}}</option>
+        </select>
+        <br><br>
+    </div>
+    
+    <div mat-dialog-actions>
+        <button class="btn-sub" mat-button (click)="onsubmit1()">Submit</button>
+        <button class="btn-del"mat-button (click)="ondelete()">Delete</button>
+        </div>
+    </form>
+    </div>
+  
+   
+  </mat-form-field>
+</div>
+
