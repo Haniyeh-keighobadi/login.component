@@ -75,11 +75,16 @@ button{
     margin-top: 510px;
 }
 
-.example-full-width {
+.example-form{
+    margin-top: -500px;
+    margin-right: 200px;
+}
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
     width: 100%;
-    margin-top: 100px;
   }
   
-  td {
-    padding-right: 8px;
+  .example-full-width {
+    width: 100%;
   }

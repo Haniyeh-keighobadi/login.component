@@ -104,6 +104,7 @@ interface personalinfo{
         displayedColumns: string[] = ['$implicit', 'index', 'count', 'first', 'last', 'even', 'odd'];
         data: string[] = ['one', 'two', 'three', 'four', 'five'];
       }
+      export class InputHintExample {}
       export class InputFormExample {}
       export class ButtonTypesExample {}
        export class GridListOverviewExample {}
