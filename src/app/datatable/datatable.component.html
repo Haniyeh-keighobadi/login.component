@@ -14,27 +14,27 @@
             </ng-container>
           
             <!-- Count Column -->
-            <ng-container matColumnDef="count">
+            <ng-container matColumnDef="Gender">
               <th mat-header-cell *matHeaderCellDef> Gender </th>
-              <td mat-cell *matCellDef="let count = count"> {{Gender}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.Gender}} </td>
             </ng-container>
           
             <!-- First Column -->
-            <ng-container matColumnDef="first">
+            <ng-container matColumnDef="Email">
               <th mat-header-cell *matHeaderCellDef> Email </th>
-              <td mat-cell *matCellDef="let first = first"> {{Email}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
             </ng-container>
           
             <!-- Last Column -->
-            <ng-container matColumnDef="last">
+            <ng-container matColumnDef="Password">
               <th mat-header-cell *matHeaderCellDef> Password </th>
-              <td mat-cell *matCellDef="let last = last"> {{Password}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.Password}} </td>
             </ng-container>
           
             <!-- Even Column -->
-            <ng-container matColumnDef="even">
+            <ng-container matColumnDef="Birthday">
               <th mat-header-cell *matHeaderCellDef> Birthday </th>
-              <td mat-cell *matCellDef="let even = even"> {{Birthday}} </td>
+              <td mat-cell *matCellDef="let element"> {{element.Birthday}} </td>
             </ng-container>
           
             <!-- Odd Column -->

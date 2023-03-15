@@ -8,11 +8,11 @@ import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog
 import { LoginComponent } from '../login/login.component';
 import {MatTableModule} from '@angular/material/table';
 interface personalinfo{
-    FirstName:string;
+   // FirstName:string;
     // LastName:string;
-     Gender:string;
-     Email:any;
-     Password:any;
+    // Gender:string;
+    // Email:any;
+   //  Password:any;
      Birthday:any;
   }
   export interface DialogData {
@@ -29,9 +29,9 @@ interface personalinfo{
   export class DatatableComponent  {
    
    
-    displayedColumns: string[] = [ 'LastName', 'count', 'first', 'last', 'even', 'odd'];
-    data: any[] = [{LastName: 1, count: 'Hydrogen', first: 1.0079, last: 'H'},
-    {LastName: 2, count: 'Helium', first: 4.0026, last: 'He'}]
+    displayedColumns: string[] = [ 'LastName', 'Gender', 'Email', 'Password', 'Birthday', 'odd'];
+    data: any[] = [{LastName: 1, Gender: 'Hydrogen', Email: 1.0079, Password: 'H',Birthday:2032020},
+    {LastName: 2, Gender: 'Helium', Email: 4.0026, Password: 'He'}]
    
    
     constructor(public dialog: MatDialog) {}
@@ -40,27 +40,24 @@ interface personalinfo{
   
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed Data',result);
-        
+        this.data.push(result);
       });
     }
 
     getDataGrid1() {
 
         let newperson:personalinfo={
-          FirstName:this.FirstName,
+         // FirstName:this.FirstName,
         //  LastName:this.LastName,
-          Gender:this.Gender,
-          Email:this.Email,
-          Password:this.Password,
+         // Gender:this.Gender,
+         // Email:this.Email,
+         // Password:this.Password,
           Birthday:this.Birthday
           
     
         }
         
     
-      if(this.FirstName!= "" && this.FirstName != null){
-        this.personList.push(newperson);
-      }
       
       }
       search(e:any){
@@ -71,7 +68,7 @@ interface personalinfo{
       count:number=0;
       dataSource:any;
       dataSourceSelect:any;
-      FirstName:string='';
+      //FirstName:string='';
       //LastName:string='';
       Gender:string='';
       Email:any;
