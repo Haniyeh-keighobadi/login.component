@@ -1,4 +1,57 @@
-html,body{
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+
+  }
+
+  .example-full-width {
+    width: 200px;
+    margin-left: 5px;
+    padding-top: 5px;
+
+  }
+ 
+  
+  td {
+    padding-right: 8px;
+  }
+  .btnsub{
+    margin-left: 5px;
+
+  }
+  .btndel{
+    margin-left: 142px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* html,body{
     overflow: hidden;
 }
 .avatar{
@@ -103,4 +156,4 @@ select{
 mat-dialog-content,mat-form-field{
     width: 500px;
     height: 650px;
-}
+} */

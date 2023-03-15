@@ -69,7 +69,7 @@ export interface DialogData {
     Birthday:any;
     personList:personalinfo[]=[];
 
-    onsubmit1(){
+    onsubmit(){
       let newperson:personalinfo={
       FirstName:this.FirstName,
       LastName:this.LastName,
@@ -97,6 +97,7 @@ this.dialogRef.close(this.personList);
      
      }
      export class InputHintExample {}
+     export class DatepickerOverviewExample {}
   //city select box 
   //       valueForAPI: any;
   //   dataSourceSelect: any;

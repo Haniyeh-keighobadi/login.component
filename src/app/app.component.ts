@@ -109,11 +109,11 @@ export class AppComponent implements OnInit {
     this.getDataGrid();
   }
 }
-export class MyComponent {
-  selectedValue: any;
-}
+// export class MyComponent {
+//   selectedValue: any;
+// }
 
-export class SelectNoRippleExample {}
-export class InputHintExample {}
-export class ButtonTypesExample {}
-export class ProgressSpinnerOverviewExample {}
+// export class SelectNoRippleExample {}
+// export class InputHintExample {}
+// export class ButtonTypesExample {}
+// export class ProgressSpinnerOverviewExample {}

@@ -1,53 +1,4 @@
-
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  background-color: aliceblue;
-}
-
-.example-full-width {
-  width: 100%;
-  background-color: aquamarine;
-}
-
-td {
-  padding-right: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* mat-grid-tile {
+/* /* mat-grid-tile {
   background: lightblue;
 }
 .select{
@@ -66,8 +17,8 @@ mat-grid-list{
 } */
 
 
-/* 
-.example-form { */
+
+/* .example-form { */
   /* min-width: 150px;
   max-width: 500px;
   width: 100%; */
@@ -108,4 +59,4 @@ th{
 td{
   padding-left: 50px;
   
-}  */
+}  */ 
