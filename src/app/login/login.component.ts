@@ -20,8 +20,6 @@ export interface DialogData {
   name: string;
 }
 
-
-
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -98,7 +96,28 @@ this.dialogRef.close(this.personList);
      }
      export class InputHintExample {}
      export class DatepickerOverviewExample {}
-  //city select box 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     //city select box 
   //       valueForAPI: any;
   //   dataSourceSelect: any;
   // dataSource:any;
