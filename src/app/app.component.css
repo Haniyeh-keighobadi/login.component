@@ -1,4 +1,53 @@
-mat-grid-tile {
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.example-full-width {
+  width: 100%;
+  background-color: aquamarine;
+}
+
+td {
+  padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mat-grid-tile {
   background: lightblue;
 }
 .select{
@@ -15,28 +64,31 @@ mat-grid-list{
   width: 100%;
   height: 10px;
 } */
-.example-form {
+
+
+/* 
+.example-form { */
   /* min-width: 150px;
   max-width: 500px;
   width: 100%; */
-  display: inline-block;
+  /* display: inline-block;
   margin-left: 100px;
-}
+} */
 /* 
 .example-full-width {
   width: 100%;
 } */
-.example-form2{
+/* .example-form2{ */
   /* min-width: 150px;
   max-width: 500px; */
-  width: 100px;
+  /* width: 100px;
   display: inline-block;
   margin-left: 100px;
  
-}
-.example-form3{
+} */
+/* .example-form3{ */
   /* width: 100px; */
-  display: inline-block;
+  /* display: inline-block;
   margin-left: 200px;
   margin-top: 8px;
  
@@ -56,4 +108,4 @@ th{
 td{
   padding-left: 50px;
   
-}
+}  */
