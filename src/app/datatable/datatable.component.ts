@@ -9,7 +9,7 @@ import { LoginComponent } from '../login/login.component';
 import {MatTableModule} from '@angular/material/table';
 interface personalinfo{
     FirstName:string;
-     LastName:string;
+    // LastName:string;
      Gender:string;
      Email:any;
      Password:any;
@@ -29,8 +29,10 @@ interface personalinfo{
   export class DatatableComponent  {
    
    
-    displayedColumns: string[] = ['$implicit', 'index', 'count', 'first', 'last', 'even', 'odd'];
-    data: string[] = ['one', 'two', 'three', 'four', 'five'];
+    displayedColumns: string[] = [ 'LastName', 'count', 'first', 'last', 'even', 'odd'];
+    data: any[] = [{LastName: 1, count: 'Hydrogen', first: 1.0079, last: 'H'},
+    {LastName: 2, count: 'Helium', first: 4.0026, last: 'He'}]
+   
    
     constructor(public dialog: MatDialog) {}
     openDialog(): void {
@@ -46,7 +48,7 @@ interface personalinfo{
 
         let newperson:personalinfo={
           FirstName:this.FirstName,
-          LastName:this.LastName,
+        //  LastName:this.LastName,
           Gender:this.Gender,
           Email:this.Email,
           Password:this.Password,
@@ -70,7 +72,7 @@ interface personalinfo{
       dataSource:any;
       dataSourceSelect:any;
       FirstName:string='';
-      LastName:string='';
+      //LastName:string='';
       Gender:string='';
       Email:any;
       Password:any;
@@ -101,8 +103,18 @@ interface personalinfo{
        
        }
        export class TableRowContextExample {
-        displayedColumns: string[] = ['$implicit', 'index', 'count', 'first', 'last', 'even', 'odd'];
-        data: string[] = ['one', 'two', 'three', 'four', 'five'];
+        displayedColumns: string[] = [ 'LastName', 'count', 'first', 'last', 'even', 'odd'];
+        data: any[] = [{LastName: 1, count: 'Hydrogen', first: 1.0079, last: 'H'},
+        {LastName: 2, count: 'Helium', first: 4.0026, last: 'He'},
+        {LastName: 3, count: 'Lithium', first: 6.941, last: 'Li'},
+        {LastName: 4, count: 'Beryllium', first: 9.0122, last: 'Be'},
+        {LastName: 5, count: 'Boron', first: 10.811, last: 'B'},
+        {LastName: 6, count: 'Carbon', first: 12.0107, last: 'C'},
+        {LastName: 7, count: 'Nitrogen', first: 14.0067, last: 'N'},
+        {LastName: 8, count: 'Oxygen', first: 15.9994, last: 'O'},
+        {LastName: 9, count: 'Fluorine', first: 18.9984, last: 'F'},
+        {LastName: 10, count: 'Neon', first: 20.1797, last: 'Ne'}];
+
       }
       export class InputHintExample {}
       export class InputFormExample {}
