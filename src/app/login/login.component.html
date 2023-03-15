@@ -2,32 +2,28 @@
  <form class="example-form">
     <table class="example-full-width" cellspacing="0"><tr>
       <td>
-        <mat-form-field class="example-full-width ">
+        <mat-form-field class="example-full-width " >
         <mat-label >First name</mat-label>
-        <input matInput >
-        {{FirstName}}
+        <input matInput [(ngModel)]="FirstName" name="FirstName">
       </mat-form-field>
     </td>
     
       <td>
         <mat-form-field class="example-full-width">
         <mat-label>Last name</mat-label>
-        <input matInput>
-        {{LastName}}
+        <input matInput [(ngModel)]="LastName" name="LastName">
       </mat-form-field></td></tr>
       <tr>
         <td><mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input matInput type="email">
-          {{Email}}
+          <input matInput type="email" [(ngModel)]="Email" name="Email">
         </mat-form-field>
       
       </td>
  
         <td><mat-form-field class="example-full-width">
           <mat-label>Password</mat-label>
-          <input matInput type="password">
-          {{Password}}
+          <input matInput type="password" [(ngModel)]="Password" name="Password">
         </mat-form-field></td></tr>
     </table>
     <table class="example-full-width" cellspacing="0"><tr>
@@ -43,16 +39,14 @@
     <tr>
         <td><mat-form-field appearance="fill">
             <mat-label>Gender</mat-label>
-            <mat-select disableRipple>
-                {{Gender}}
+            <mat-select disableRipple [(ngModel)]="Gender" name="Gender">
               <mat-option value="Male">male</mat-option>
               <mat-option value="Female">female</mat-option>
             </mat-select>
           </mat-form-field></td>
         <td><mat-form-field class="example-full-width">
           <mat-label>Birthday</mat-label>
-          <input matInput placeholder="Birthday" type="date">
-          {{Birthday}}
+          <input matInput placeholder="Birthday" type="date" [(ngModel)]="Birthday" name="Birthday">
         </mat-form-field></td>
         
        

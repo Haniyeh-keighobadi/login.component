@@ -78,7 +78,6 @@ export interface DialogData {
     }
     
     this.personList.push(newperson);
-    console.log(this.personList);
 this.dialogRef.close(this.personList);
    }
 
