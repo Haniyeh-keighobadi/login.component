@@ -9,9 +9,7 @@ html{
 .example-button-row a {
   margin-right: 8px;
 }
-button{
-    margin-top: 510px;
-}
+
 
 .example-form{
    
@@ -27,8 +25,19 @@ button{
   .example-full-width {
     width: 100%;
   }
-
-
+.size{
+    margin-top: 400px;
+    width: 700px;
+    height: 700px;
+}
+button{
+    margin-top: 130px;
+    margin-left: 321px;
+}
+.header{
+   margin-left: 600px;
+    margin-top: -57px;
+}
 
 
 

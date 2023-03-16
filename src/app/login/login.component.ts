@@ -32,10 +32,17 @@ export interface DialogData {
       public dialogRef: MatDialogRef<LoginComponent>,
       @Inject(MAT_DIALOG_DATA) public data: DialogData,
     ) {}
+
+    dataSource:any;
+    dataSourceSelect:any;
+    FirstName:string='';
+    LastName:string='';
+    Gender:string='';
+    Email:any;
+    Password:any;
+    Birthday:any;
+    personList:personalinfo[]=[];
   
-    onNoClick(): void {
-      this.dialogRef.close();
-    }
     
     getDataGrid1() {
 
@@ -46,27 +53,9 @@ export interface DialogData {
         Email:this.Email,
         Password:this.Password,
         Birthday:this.Birthday
-        
-  
-      }
-      
-  
-    if(this.FirstName!= "" && this.FirstName != null){
-      this.personList.push(newperson);
-    }
-    
-    }
+      }}
  
-    dataSource:any;
-    dataSourceSelect:any;
-    FirstName:string='';
-    LastName:string='';
-    Gender:string='';
-    Email:any;
-    Password:any;
-    Birthday:any;
-    personList:personalinfo[]=[];
-
+ 
     onsubmit(){
       let newperson:personalinfo={
       FirstName:this.FirstName,
@@ -76,9 +65,8 @@ export interface DialogData {
       Password:this.Password,
       Birthday:this.Birthday
     }
-    
     this.personList.push(newperson);
-this.dialogRef.close(this.personList);
+    this.dialogRef.close(this.personList);
    }
 
    ondelete():void{

@@ -2,9 +2,18 @@
  <form class="example-form">
     <table class="example-full-width" cellspacing="0"><tr>
       <td>
-        <mat-form-field class="example-full-width " >
+        <!-- <div  class="lblform">
+        <mat-label>firstname:</mat-label>
+        <mat-label>lastname:</mat-label>
+        <mat-label>Email:</mat-label>
+        <mat-label>Password:</mat-label>
+        <mat-label>city:</mat-label>
+        <mat-label>State:</mat-label>
+        <mat-label>Gender:</mat-label>
+      </div> -->
+        <mat-form-field class="example-full-width" >
         <mat-label >First name</mat-label>
-        <input matInput [(ngModel)]="FirstName" name="FirstName">
+        <input matInput [(ngModel)]="FirstName" name="FirstName" >
       </mat-form-field>
     </td>
     
@@ -48,8 +57,6 @@
           <mat-label>Birthday</mat-label>
           <input matInput placeholder="Birthday" type="date" [(ngModel)]="Birthday" name="Birthday">
         </mat-form-field></td>
-        
-       
       </tr>
     
       <!-- <tr><td>
